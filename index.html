@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#203d31">
+  <title>Alessia — The Jungle Chase</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a href="./" class="brand"><span class="brand-mark">a<span>✦</span></span> wild little worlds<span class="brand-dot">®</span></a>
+    <div class="header-right"><span class="edition">A LITTLE ADVENTURE. A LOT OF WILD.</span><span class="issue">NO. 001 <span>↗</span></span></div>
+  </header>
+  <main>
+    <section class="intro">
+      <div><div class="eyebrow"><span></span> THE JUNGLE IS CALLING</div><h1>Meet Alessia.<br>Born to <em>be wild.</em></h1><p>One fearless tiger. One cheeky orangutan.<br>A big-cat bestie. Let the chase begin.</p></div>
+      <div class="intro-stamp"><span>STAY CURIOUS · PLAY WILD</span><svg viewBox="0 0 80 65" aria-hidden="true"><g fill="currentColor"><ellipse cx="40" cy="44" rx="19" ry="15"/><ellipse cx="18" cy="25" rx="8" ry="11" transform="rotate(-24 18 25)"/><ellipse cx="34" cy="14" rx="8" ry="11"/><ellipse cx="51" cy="15" rx="8" ry="11"/><ellipse cx="65" cy="29" rx="8" ry="11" transform="rotate(24 65 29)"/></g></svg><span>EST. IN THE JUNGLE</span></div>
+    </section>
+    <section class="game-shell" aria-label="Alessia jungle chase game">
+      <div class="game-topbar"><div class="live-label"><span></span> THE JUNGLE CHASE</div><div class="level">01 <span>/ THE EMERALD GROVE</span></div><div class="game-actions"><button id="sound" title="Toggle sound" aria-label="Enable sound">♫ <span>OFF</span></button><button id="pause" title="Pause game" aria-label="Pause game">Ⅱ</button><button id="restart" title="Restart game" aria-label="Restart game">↻</button></div></div>
+      <div class="game-layout">
+        <div class="play-area">
+          <canvas id="game" width="1080" height="740" tabindex="0" aria-label="Jungle game. Move Alessia with arrow keys or WASD, hold shift to sprint, and catch the orangutan."></canvas>
+          <div class="world-label"><span class="tiny-star">✦</span> EMERALD GROVE <span class="world-coordinates">03° N · 114° E</span></div>
+          <div class="objective-toast" id="toast"><span>✦</span> Catch the orangutan. Collect a little wild along the way.</div>
+          <div class="overlay" id="overlay"><div class="overlay-card"><div class="overlay-eyebrow" id="overlay-eyebrow">YOUR NEXT LITTLE ADVENTURE</div><h2 id="overlay-title">Ready, tiger?</h2><p id="overlay-description">Follow your wild side. Catch Ollie before<br>the jungle clock runs out.</p><button class="primary-button" id="start">Let’s get wild <span>↗</span></button><span class="overlay-hint">ARROW KEYS TO ROAM · SHIFT TO SPRINT</span></div></div>
+          <div class="mobile-controls" aria-label="Touch controls"><button data-dir="up" aria-label="Move up">↑</button><div><button data-dir="left" aria-label="Move left">←</button><button data-dir="down" aria-label="Move down">↓</button><button data-dir="right" aria-label="Move right">→</button></div></div>
+          <div class="canvas-footer"><span><i></i> A little chase. No animals harmed.</span><span>EXPLORE. CHASE. REPEAT. ↗</span></div>
+        </div>
+        <aside class="game-sidebar">
+          <div class="mission-label">YOUR MISSION <span>↗</span></div><h2>Catch you<br>if I can.</h2><p class="mission-copy">Ollie’s on the move! Guide Alessia through the grove and tag that cheeky orangutan.</p>
+          <div class="stats"><div><span class="stat-label">TIME LEFT</span><strong id="timer">01:30</strong></div><div><span class="stat-label">PAW POINTS</span><strong id="score">000<span> / 080</span></strong></div></div>
+          <div class="stamina-row"><span>SPRINT ENERGY</span><span id="energy-label">100%</span></div><div class="energy-track"><div id="energy"></div></div>
+          <div class="crew-title">THE WILD BUNCH <span>03</span></div>
+          <div class="character"><div class="avatar tiger">🐯</div><div><strong>Alessia <span>YOU</span></strong><small>Small paws. Big main-character energy.</small></div></div>
+          <div class="character"><div class="avatar panther">🐈‍⬛</div><div><strong>Shadow</strong><small>Your big-cat partner in crime.</small></div></div>
+          <div class="character"><div class="avatar orangutan">🦧</div><div><strong>Ollie</strong><small>Catch him… if you can.</small></div></div>
+          <div class="controls"><div class="controls-title">A QUICK FIELD GUIDE</div><div><span class="key-group"><kbd>↑</kbd><kbd>←</kbd><kbd>↓</kbd><kbd>→</kbd></span><span>Move around</span></div><div><span class="or-keys">or <b>W A S D</b></span><span>Same adventure</span></div><div><kbd class="wide-key">SHIFT</kbd><span>A little extra speed</span></div><div><kbd class="wide-key">SPACE</kbd><span>Take a breather</span></div></div>
+        </aside>
+      </div>
+      <div class="game-bottom"><span><span class="leaf">✳</span> TAKE THE SCENIC ROUTE. IT’S WORTH IT.</span><span>MADE FOR YOUR INNER WILD CHILD <span class="bottom-star">✦</span></span></div>
+    </section>
+    <footer><span>A little escape from the everyday.</span><span>NO DOWNLOADS. JUST GOOD INSTINCTS. <span>↗</span></span></footer>
+  </main>
+  <script src="game.js"></script>
+</body>
+</html>
